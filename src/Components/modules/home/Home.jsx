@@ -2,7 +2,10 @@ import React from "react";
 import "./Home.scss";
 import Hanheader from "../../../assets/homeAssets/HAndheader.png";
 import Persentage from "../../../assets/homeAssets/persntage.png";
-import GetStart from '../../../assets/homeAssets/getstrt.png';
+import GetStart from "../../../assets/homeAssets/getstrt.png";
+import Starimg from "../../../assets/homeAssets/star.png";
+import Chckimg from "../../../assets/homeAssets/chck.png";
+import Teliimg from "../../../assets/homeAssets/teli.png";
 const Home = () => {
   return (
     <>
@@ -34,11 +37,42 @@ const Home = () => {
       </div>
       <div className="container3">
         <div className="container3-content">
-       <Numberactivity />
-       <p>|</p>
-       <Numberactivity />
-       <p>|</p>
-       <Numberactivity />
+          <Numberactivity />
+          <p>|</p>
+          <Numberactivity />
+          <p>|</p>
+          <Numberactivity />
+        </div>
+      </div>
+      <div className="container4">
+        <div className="container4-content">
+          <div className="container4-content-left">
+            <h1>You do the business, we’ll handle the money.</h1>
+            <p>
+              With the right credit card, you can improve your financial life by
+              building credit, earning rewards and saving money. But with
+              hundreds of credit cards on the market.
+            </p>
+            <button>Get Started</button>
+          </div>
+          <div className="container4-content-right">
+            <BussinessCards
+              tittle="Rewards"
+              data="The best credit cards offer some tantalizing combinations of
+            promotions and prizes"
+              Star={Starimg}
+            />
+            <BussinessCards
+              tittle="100% Secured"
+              data="We take proactive steps make sure your information and transactions are secure."
+              Star={Chckimg}
+            />
+            <BussinessCards
+              tittle="Balance Transfer"
+              data="A balance transfer credit card can save you a lot of money in interest charges."
+              Star={Teliimg}
+            />
+          </div>
         </div>
       </div>
     </>
@@ -47,15 +81,29 @@ const Home = () => {
 
 export default Home;
 
-
-
-const Numberactivity=()=>{
-  return(
+const Numberactivity = () => {
+  return (
     <div className="nactivity">
       <div className="nactivity-content">
         <p>300+</p>
         <h2>user active</h2>
       </div>
     </div>
-  )
-}
+  );
+};
+
+const BussinessCards = ({ tittle, data, Star }) => {
+  return (
+    <div className="bscard">
+      <div className="bscard-content">
+        <div className="bscard-content-left">
+          <img src={Star} alt="star" />
+        </div>
+        <div className="bscard-content-right">
+          <h2> {tittle} </h2>
+          <p>{data}</p>
+        </div>
+      </div>
+    </div>
+  );
+};
