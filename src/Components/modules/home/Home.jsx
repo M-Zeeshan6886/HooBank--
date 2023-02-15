@@ -6,6 +6,7 @@ import GetStart from "../../../assets/homeAssets/getstrt.png";
 import Starimg from "../../../assets/homeAssets/star.png";
 import Chckimg from "../../../assets/homeAssets/chck.png";
 import Teliimg from "../../../assets/homeAssets/teli.png";
+import paypal from "../../../assets/homeAssets/paypal.png";
 const Home = () => {
   return (
     <>
@@ -73,6 +74,40 @@ const Home = () => {
               Star={Teliimg}
             />
           </div>
+        </div>
+      </div>
+      <div className="transaction-container5">
+        <div className="transaction-container5-content">
+          <div className="transaction-container5-content-left">
+            <div className="transaction-container5-content-left-paypal-container">
+              <div className="transaction-container5-content-left-paypal-container-content">
+                <div className="transaction-container5-content-left-paypal-container-content-row1">
+                  <div className="transaction-container5-content-left-paypal-container-content-row1-left">
+                    <div>
+                      <img src={paypal} alt="paypal" />
+                    </div>
+                  </div>
+                  <div className="transaction-container5-content-left-paypal-container-content-row1-right">
+                    <h1>Paypal</h1>
+                    <p>Checkout</p>
+                  </div>
+                </div>
+                <div className="transaction-container5-content-left-paypal-container-content-row2">
+                  <div className="transaction-container5-content-left-paypal-container-content-row2-left">
+                    <p>Total</p>
+                    <h2>$210</h2>
+                  </div>
+                  <div className="transaction-container5-content-left-paypal-container-content-row2-right">
+                    <button>Change</button>
+                  </div>
+                </div>
+                <div className="transaction-container5-content-left-paypal-container-content-row3">
+                  <button>Make Payment</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="transaction-container5-content-right"></div>
         </div>
       </div>
     </>
