@@ -6,7 +6,7 @@
   height: auto;
   padding: 1.5rem 0rem;
 //   background-color: aqua;
-  background-color: rgb(53, 52, 52);
+  background-color:  #11141F;
   &-content {
     width: 80%;
     height: auto;
@@ -63,5 +63,64 @@ cursor: pointer;
 }
       }
     }
+  }
+}
+
+.container3{
+  width: 100%;
+  height: auto;
+  padding: .5rem 0rem ;
+  background-color:  #11141F;
+  &-content{
+    width: 80%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5rem 0rem ;
+    // background-color: lightcoral;
+   &>p{
+    font-size: 1.5rem;
+    color: rgba(255, 255, 255, 0.6);
+   }
+  }
+}
+.nactivity{
+  width: 25%;
+  height: auto;
+  padding: .5rem 0rem ;
+  // background-color: red;
+  // border-right: 1px solid white;
+  &-content{
+    width: 100%;
+    height: auto;
+    // margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5rem 0rem;
+    // background-color: darkgreen;
+    &>p{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 40.8925px;
+line-height: 130%;
+color: #FFFFFF;
+  }
+  &>h2{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 20.4463px;
+line-height: 130%;
+text-transform: uppercase;
+background: radial-gradient(64.18% 64.18% at 71.16% 35.69%, #DEF9FA 0.89%, #BEF3F5 17.23%, #9DEDF0 42.04%, #7DE7EB 55.12%, #5CE1E6 71.54%, #33BBCF 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+// background-clip: text;
+// text-fill-color: transparent;
+  }
   }
 }

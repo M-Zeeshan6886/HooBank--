@@ -1,6 +1,6 @@
 import React from "react";
 import "./Home.scss";
-import Hanheader from "../../../assets/Handheader.svg";
+import Hanheader from "../../../assets/homeAssets/HAndheader.png";
 import Persentage from "../../../assets/homeAssets/persntage.png";
 import GetStart from '../../../assets/homeAssets/getstrt.png';
 const Home = () => {
@@ -32,8 +32,30 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <div className="container3">
+        <div className="container3-content">
+       <Numberactivity />
+       <p>|</p>
+       <Numberactivity />
+       <p>|</p>
+       <Numberactivity />
+        </div>
+      </div>
     </>
   );
 };
 
 export default Home;
+
+
+
+const Numberactivity=()=>{
+  return(
+    <div className="nactivity">
+      <div className="nactivity-content">
+        <p>300+</p>
+        <h2>user active</h2>
+      </div>
+    </div>
+  )
+}

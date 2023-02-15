@@ -116,11 +116,12 @@ color: rgba(255, 255, 255, 0.7);
       width: 40%;
       height: auto;
       padding: 0.5rem 0rem;
-      background: linear-gradient(
-        180deg,
-        rgba(188, 165, 255, 0) 0%,
-        #214d76 100%
-      );
+      // background-image: url('../../../assets/homeAssets//bgclr.png');
+      // background: linear-gradient(
+      //   180deg,
+      //   rgba(188, 165, 255, 0) 0%,
+      //   #214d76 100%
+      // );
       // border: 1px solid #000000;
       // filter: blur(61.5px);
       & > img {
