@@ -1,0 +1,131 @@
+@import "../../../Sass/mixin";
+@import "../../../Sass/variables";
+
+.subheader-container {
+  width: 100%;
+  height: auto;
+  padding: 0.5rem 0rem;
+  background-color:  #11141F;
+  &-content {
+    width: 80%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    padding: 0.5rem 0rem;
+    background-color:  #11141F;
+    &-left {
+      width: 60%;
+      height: auto;
+      padding: 0.5rem 0rem;
+    //   background-color:;
+      &-discountbox {
+        position: absolute;
+        width: 380px;
+        height: 40px;
+        left: 135px;
+        top: 160px;
+  display: flex;
+  align-items: center;
+//   justify-content: space-between;
+        background: linear-gradient(125.17deg, #272727 0%, #11101d 100%);
+        border-radius: 10px;
+        &>img{
+            width: 20px;
+position: absolute;
+left: 4.33%;
+// right: 8.34%;
+// top: 8.33%;
+// bottom: 8.34%;
+padding: .5rem;
+border-radius: 50px;
+background: #393939;
+mix-blend-mode: normal;
+// opacity: 0.4;
+        }
+        &>p{
+            font-family: 'Poppins';
+font-style: normal;
+font-weight: 100;
+font-size: 1.6rem;
+line-height: 150%;
+color: #FFFFFF;
+margin-left: 55px;
+&>span{
+    font-weight: 500;
+}
+        }
+      }
+      &-headtext{
+        position: absolute;
+width: 670px;
+height: 303px;
+left: 135.41px;
+top: 205px;
+&>p{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 6rem;
+line-height: 140%;
+/* or 101px */
+letter-spacing: 0.01em;
+color: #FFFFFF;
+}
+
+&>span{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 72px;
+line-height: 140%;
+/* identical to box height, or 101px */
+
+letter-spacing: 0.01em;
+
+background: radial-gradient(64.18% 64.18% at 71.16% 35.69%, #DEF9FA 0.89%, #BEF3F5 17.23%, #9DEDF0 42.04%, #7DE7EB 55.12%, #5CE1E6 71.54%, #33BBCF 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+}
+      }
+      &>img{
+        position: absolute;
+width: 130px;
+height: 130px;
+left: 605px;
+top: 205px;
+      }
+      &>p{
+        position: absolute;
+width: 413px;
+height: 93px;
+left: 136px;
+top: 500px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 1.5rem;
+line-height: 170%;
+/* or 31px */
+color: rgba(255, 255, 255, 0.7);
+      }
+    }
+    &-right {
+      width: 40%;
+      height: auto;
+      padding: 0.5rem 0rem;
+      background: linear-gradient(
+        180deg,
+        rgba(188, 165, 255, 0) 0%,
+        #214d76 100%
+      );
+      // border: 1px solid #000000;
+      // filter: blur(61.5px);
+      & > img {
+        width: 530px;
+      }
+    }
+  }
+}
