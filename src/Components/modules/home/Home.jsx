@@ -12,6 +12,10 @@ import Check from "../../../assets/homeAssets/chck.svg";
 import Apple from "../../../assets/homeAssets/apple.svg";
 import pStore from "../../../assets/homeAssets/playstore.svg";
 import method from "../../../assets/homeAssets/method.png";
+import airbn from "../../../assets/homeAssets/airbnb.png";
+import binance from "../../../assets/homeAssets/binance.png";
+import conbase from "../../../assets/homeAssets/conbase.png";
+import dropbase from "../../../assets/homeAssets/dropbox.png";
 
 const Home = () => {
   return (
@@ -149,8 +153,29 @@ const Home = () => {
             <button>Get Started</button>
           </div>
           <div className="method-container-content-right">
-            <img src={method} alt='method' />
+            <img src={method} alt="method" />
           </div>
+        </div>
+      </div>
+      <div className="container6">
+        <div className="container6-content">
+          <div className="container6-content-left">
+            <h1>What people are saying about us</h1>
+          </div>
+          <div className="container6-content-right">
+            <p>
+              Everything you need to accept card payments and grow your business
+              anywhere on the planet.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className="companyNames">
+        <div className='companyNames-content'>
+        <img src={airbn} alt='airbnd' />
+        <img src={conbase} alt='airbnd' />
+        <img src={binance} alt='airbnd' />
+        <img src={dropbase} alt='airbnd' />
         </div>
       </div>
     </>

@@ -547,18 +547,18 @@
         letter-spacing: 0.01em;
         color: #ffffff;
       }
-      &>p{
+      & > p {
         margin-top: 24px;
-        font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
-font-size: 1.5rem;
-line-height: 170%;
-letter-spacing: 0.01em;
-color: rgba(255, 255, 255, 0.7);
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.5rem;
+        line-height: 170%;
+        letter-spacing: 0.01em;
+        color: rgba(255, 255, 255, 0.7);
       }
-      &>button{
-         width: 170px;
+      & > button {
+        width: 170px;
         height: 64px;
         margin-top: 48px;
         // padding:1.5rem;
@@ -592,11 +592,80 @@ color: rgba(255, 255, 255, 0.7);
       align-items: center;
       justify-content: right;
       // background-color: #9dedf0;
-      &>img{
+      & > img {
         width: 80%;
         margin: auto;
         border-radius: 2rem;
       }
     }
+  }
+}
+
+.container6 {
+  width: 100%;
+  height: auto;
+  padding: 0.5rem 0rem;
+  background-color: #11141f;
+  &-content {
+    width: 80%;
+    height: auto;
+    margin: auto;
+    padding: 0.5rem 0rem;
+    display: flex;
+    // background-color: #7de7eb;
+    &-left {
+      width: 50%;
+      height: auto;
+      padding: 0.5rem 0rem;
+      // background-color: purple;
+      & > h1 {
+        width: 90%;
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 4rem;
+        line-height: 170%;
+        color: #ffffff;
+      }
+    }
+    &-right {
+      width: 50%;
+      height: auto;
+      padding: 0.5rem 0rem;
+      display: flex;
+      align-items: center;
+      // background-color: lawngreen;
+      & > p {
+        width: 90%;
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.8rem;
+        line-height: 180%;
+        letter-spacing: 0.01em;
+        color: rgba(255, 255, 255, 0.7);
+      }
+    }
+  }
+}
+
+.companyNames{
+  width: 100%;
+  height: auto;
+  padding: 5rem 0rem;
+  background-color: #11141f;
+  &-content{
+    width: 80%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 0rem;
+    // background-color: darkblue;
+    &>img{
+      width: 192px;
+    }
+
   }
 }
