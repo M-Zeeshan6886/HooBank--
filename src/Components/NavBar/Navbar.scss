@@ -264,7 +264,7 @@
 .transaction-container5 {
   width: 100%;
   height: auto;
-  padding: 0.5rem 0rem;
+  padding-top: 3rem;
   background-color: #11141f;
   &-content {
     width: 80%;
@@ -385,6 +385,7 @@
                 font-size: 12px;
                 line-height: 160%;
                 letter-spacing: 0.01em;
+                cursor: pointer;
                 background: linear-gradient(
                   157.81deg,
                   #def9fa -43.27%,
@@ -409,6 +410,7 @@
               width: 100%;
               height: 33px;
               font-family: "Poppins";
+              cursor: pointer;
               background: linear-gradient(
                 157.81deg,
                 #def9fa -43.27%,
@@ -428,6 +430,7 @@
         width: 335px;
         height: 280px;
         margin-top: 18rem;
+        cursor: pointer;
         background: linear-gradient(
           113.08deg,
           #ffffff -242.51%,
@@ -459,6 +462,7 @@
         position: absolute;
         right: -6%;
         // top: -1rem;
+        cursor: pointer;
         margin-top: -4.2rem;
         & > p {
           margin-left: 1rem;
@@ -503,12 +507,95 @@
           letter-spacing: 0.01em;
           color: rgba(255, 255, 255, 0.7);
         }
-        &-btns{
+        &-btns {
           margin-top: 40px;
-          &>*:not(:first-child){
+          & > img {
+            cursor: pointer;
+          }
+          & > *:not(:first-child) {
             margin-left: 30px;
           }
         }
+      }
+    }
+  }
+}
+
+.method-container {
+  width: 100%;
+  height: auto;
+  padding: 12rem 0rem;
+  background-color: #11141f;
+  &-content {
+    width: 80%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    padding: 0.5rem 0rem;
+    // background-color: darkgray;
+    &-left {
+      width: 50%;
+      height: auto;
+      padding: 0.5rem 0rem;
+      // background-color: darkgreen;
+      & > h1 {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 4rem;
+        line-height: 160%;
+        letter-spacing: 0.01em;
+        color: #ffffff;
+      }
+      &>p{
+        margin-top: 24px;
+        font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 1.5rem;
+line-height: 170%;
+letter-spacing: 0.01em;
+color: rgba(255, 255, 255, 0.7);
+      }
+      &>button{
+         width: 170px;
+        height: 64px;
+        margin-top: 48px;
+        // padding:1.5rem;
+        cursor: pointer;
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1.5rem;
+        line-height: 150%;
+        /* identical to box height, or 27px */
+        text-transform: capitalize;
+        color: #00040e;
+        background: linear-gradient(
+          157.81deg,
+          #def9fa -43.27%,
+          #bef3f5 -21.24%,
+          #9dedf0 12.19%,
+          #7de7eb 29.82%,
+          #5ce1e6 51.94%,
+          #33bbcf 90.29%
+        );
+        border-radius: 10px;
+        border: none;
+      }
+    }
+    &-right {
+      width: 50%;
+      height: auto;
+      padding: 0.5rem 0rem;
+      display: flex;
+      align-items: center;
+      justify-content: right;
+      // background-color: #9dedf0;
+      &>img{
+        width: 80%;
+        margin: auto;
+        border-radius: 2rem;
       }
     }
   }

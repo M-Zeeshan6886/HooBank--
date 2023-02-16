@@ -11,6 +11,7 @@ import LastT from "../../../assets/homeAssets/lttrans.png";
 import Check from "../../../assets/homeAssets/chck.svg";
 import Apple from "../../../assets/homeAssets/apple.svg";
 import pStore from "../../../assets/homeAssets/playstore.svg";
+import method from "../../../assets/homeAssets/method.png";
 
 const Home = () => {
   return (
@@ -130,10 +131,25 @@ const Home = () => {
                 integer platea placerat.
               </p>
               <div className="transaction-container5-content-right-content-btns">
-                <img src={Apple} alt='Apple-img' />
-                <img src={pStore} alt='Playstore-img' />
+                <img src={Apple} alt="Apple-img" />
+                <img src={pStore} alt="Playstore-img" />
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+      <div className="method-container">
+        <div className="method-container-content">
+          <div className="method-container-content-left">
+            <h1>Find a better card deal in few easy steps.</h1>
+            <p>
+              Arcu tortor, purus in mattis at sed integer faucibus. Aliquet quis
+              aliquet eget mauris tortor.ç Aliquet ultrices ac, ametau.
+            </p>
+            <button>Get Started</button>
+          </div>
+          <div className="method-container-content-right">
+            <img src={method} alt='method' />
           </div>
         </div>
       </div>
