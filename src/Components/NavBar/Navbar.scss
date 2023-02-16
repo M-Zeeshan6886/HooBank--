@@ -276,11 +276,18 @@
     &-left {
       width: 50%;
       height: auto;
+      position: relative;
       padding: 0.5rem 0rem;
       background-color: lightgray;
       &-paypal-container {
         width: 227px;
         height: 216px;
+        // float: right;
+        margin-bottom: -2rem;
+        margin-right: 2rem;
+        z-index: 999999999999;
+        position: absolute;
+        right: 2%;
         background: linear-gradient(
           110.53deg,
           #ffffff -265.46%,
@@ -288,7 +295,8 @@
         );
         box-shadow: 4px 6px 30px rgba(19, 36, 46, 0.25);
         border-radius: 10px;
-        display: flex;
+        // display: flex;
+        padding: 2rem 1rem;
         &-content {
           width: 90%;
           height: 185px;
@@ -300,7 +308,7 @@
             height: auto;
             display: flex;
             align-items: center;
-            padding: 0.5rem 0rem;
+            // padding: 0.5rem 0rem;
             // background-color: plum;
             &-left {
               & > div {
@@ -400,6 +408,7 @@
             & > button {
               width: 100%;
               height: 33px;
+              font-family: "Poppins";
               background: linear-gradient(
                 157.81deg,
                 #def9fa -43.27%,
@@ -413,6 +422,27 @@
               border: none;
             }
           }
+        }
+      }
+      &-tcard {
+        width: 335px;
+        height: 280px;
+        margin-top: 18rem;
+        background: linear-gradient(
+          113.08deg,
+          #ffffff -242.51%,
+          #14101d 85.56%
+        );
+        box-shadow: inset -0.243217px -0.243217px 0.364826px rgba(0, 0, 0, 0.36);
+        backdrop-filter: blur(15.2011px);
+        border-radius: 9.12064px;
+        display: flex;
+        z-index: -111111111;
+        &-content {
+          width: 90%;
+          height: 250px;
+          margin: auto;
+          // background-color: darkgray;
         }
       }
     }

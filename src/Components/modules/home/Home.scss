@@ -5,111 +5,120 @@
   width: 100%;
   height: auto;
   padding: 0.5rem 0rem;
-  background-color:  #11141F;
+  background-color: #11141f;
   &-content {
     width: 80%;
     height: auto;
     margin: auto;
     display: flex;
     padding: 0.5rem 0rem;
-    background-color:  #11141F;
+    background-color: #11141f;
     &-left {
       width: 60%;
       height: auto;
       padding: 0.5rem 0rem;
-    //   background-color:;
+      //   background-color:;
       &-discountbox {
         position: absolute;
         width: 380px;
         height: 40px;
         left: 135px;
         top: 160px;
-  display: flex;
-  align-items: center;
-//   justify-content: space-between;
+        display: flex;
+        align-items: center;
+        //   justify-content: space-between;
         background: linear-gradient(125.17deg, #272727 0%, #11101d 100%);
         border-radius: 10px;
-        &>img{
-            width: 20px;
-position: absolute;
-left: 4.33%;
-// right: 8.34%;
-// top: 8.33%;
-// bottom: 8.34%;
-padding: .5rem;
-border-radius: 50px;
-background: #393939;
-mix-blend-mode: normal;
-// opacity: 0.4;
+        & > img {
+          width: 20px;
+          position: absolute;
+          left: 4.33%;
+          // right: 8.34%;
+          // top: 8.33%;
+          // bottom: 8.34%;
+          padding: 0.5rem;
+          border-radius: 50px;
+          background: #393939;
+          mix-blend-mode: normal;
+          // opacity: 0.4;
         }
-        &>p{
-            font-family: 'Poppins';
-font-style: normal;
-font-weight: 100;
-font-size: 1.6rem;
-line-height: 150%;
-color: #FFFFFF;
-margin-left: 55px;
-&>span{
-    font-weight: 500;
-}
+        & > p {
+          font-family: "Poppins";
+          font-style: normal;
+          font-weight: 100;
+          font-size: 1.6rem;
+          line-height: 150%;
+          color: #ffffff;
+          margin-left: 55px;
+          & > span {
+            font-weight: 500;
+          }
         }
       }
-      &-headtext{
+      &-headtext {
         position: absolute;
-width: 670px;
-height: 303px;
-left: 135.41px;
-top: 205px;
-&>p{
-    font-family: 'Poppins';
-font-style: normal;
-font-weight: 600;
-font-size: 6rem;
-line-height: 140%;
-/* or 101px */
-letter-spacing: 0.01em;
-color: #FFFFFF;
-}
+        width: 670px;
+        height: 303px;
+        left: 135.41px;
+        top: 205px;
+        & > p {
+          font-family: "Poppins";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 6rem;
+          line-height: 140%;
+          /* or 101px */
+          letter-spacing: 0.01em;
+          color: #ffffff;
+        }
 
-&>span{
-    font-family: 'Poppins';
-font-style: normal;
-font-weight: 600;
-font-size: 72px;
-line-height: 140%;
-/* identical to box height, or 101px */
+        & > span {
+          font-family: "Poppins";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 72px;
+          line-height: 140%;
+          /* identical to box height, or 101px */
 
-letter-spacing: 0.01em;
+          letter-spacing: 0.01em;
 
-background: radial-gradient(64.18% 64.18% at 71.16% 35.69%, #DEF9FA 0.89%, #BEF3F5 17.23%, #9DEDF0 42.04%, #7DE7EB 55.12%, #5CE1E6 71.54%, #33BBCF 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-background-clip: text;
-text-fill-color: transparent;
-}
+          background: radial-gradient(
+              64.18% 64.18% at 71.16% 35.69%,
+              #def9fa 0.89%,
+              #bef3f5 17.23%,
+              #9dedf0 42.04%,
+              #7de7eb 55.12%,
+              #5ce1e6 71.54%,
+              #33bbcf 100%
+            )
+            /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+          text-fill-color: transparent;
+        }
       }
-      &>img{
+      & > img {
         position: absolute;
-width: 130px;
-height: 130px;
-left: 605px;
-top: 205px;
+        width: 130px;
+        height: 130px;
+        left: 605px;
+        top: 205px;
       }
-      &>p{
+      & > p {
         position: absolute;
-width: 413px;
-height: 93px;
-left: 136px;
-top: 500px;
+        width: 413px;
+        height: 93px;
+        left: 136px;
+        top: 500px;
 
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
-font-size: 1.5rem;
-line-height: 170%;
-/* or 31px */
-color: rgba(255, 255, 255, 0.7);
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.5rem;
+        line-height: 170%;
+        /* or 31px */
+        color: rgba(255, 255, 255, 0.7);
       }
     }
     &-right {

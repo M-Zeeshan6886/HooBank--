@@ -7,6 +7,8 @@ import Starimg from "../../../assets/homeAssets/star.png";
 import Chckimg from "../../../assets/homeAssets/chck.png";
 import Teliimg from "../../../assets/homeAssets/teli.png";
 import paypal from "../../../assets/homeAssets/paypal.png";
+import LastT from "../../../assets/homeAssets/lttrans.png";
+
 const Home = () => {
   return (
     <>
@@ -106,6 +108,11 @@ const Home = () => {
                 </div>
               </div>
             </div>
+              <div className="transaction-container5-content-left-tcard">
+                <div className="transaction-container5-content-left-tcard-content">
+                  <img src={LastT} alt="transactionCard" />
+                </div>
+              </div>
           </div>
           <div className="transaction-container5-content-right"></div>
         </div>
