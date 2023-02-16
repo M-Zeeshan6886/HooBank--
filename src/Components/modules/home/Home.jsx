@@ -8,6 +8,9 @@ import Chckimg from "../../../assets/homeAssets/chck.png";
 import Teliimg from "../../../assets/homeAssets/teli.png";
 import paypal from "../../../assets/homeAssets/paypal.png";
 import LastT from "../../../assets/homeAssets/lttrans.png";
+import Check from "../../../assets/homeAssets/chck.svg";
+import Apple from "../../../assets/homeAssets/apple.svg";
+import pStore from "../../../assets/homeAssets/playstore.svg";
 
 const Home = () => {
   return (
@@ -108,13 +111,30 @@ const Home = () => {
                 </div>
               </div>
             </div>
-              <div className="transaction-container5-content-left-tcard">
-                <div className="transaction-container5-content-left-tcard-content">
-                  <img src={LastT} alt="transactionCard" />
-                </div>
+            <div className="transaction-container5-content-left-tcard">
+              <div className="transaction-container5-content-left-tcard-content">
+                <img src={LastT} alt="transactionCard" />
               </div>
+            </div>
+            <div className="transaction-container5-content-left-success">
+              <img src={Check} alt="Check-img" />
+              <p>Great! Your Payment is sucessfully</p>
+            </div>
           </div>
-          <div className="transaction-container5-content-right"></div>
+          <div className="transaction-container5-content-right">
+            <div className="transaction-container5-content-right-content">
+              <h1>Easily control your billing & invoicing.</h1>
+              <p>
+                Elit enim sed massa etiam. Mauris eu adipiscing ultrices
+                ametodio aenean neque. Fusce ipsum orci rhoncus aliporttitor
+                integer platea placerat.
+              </p>
+              <div className="transaction-container5-content-right-content-btns">
+                <img src={Apple} alt='Apple-img' />
+                <img src={pStore} alt='Playstore-img' />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </>
