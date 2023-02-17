@@ -202,6 +202,20 @@ const Home = () => {
           <img src={dropbase} alt="airbnd" />
         </div>
       </div>
+      <div className="service-container">
+        <div className="service-container-content">
+          <div className="service-container-content-left">
+            <h1>Let's try out service now!</h1>
+            <p>
+              Everything you need to accept card payments and grow your business
+              anywhere on the planet.
+            </p>
+          </div>
+          <div className="service-container-content-right">
+            <button>Get Started</button>
+          </div>
+        </div>
+      </div>
     </>
   );
 };
