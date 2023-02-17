@@ -16,6 +16,8 @@ import airbn from "../../../assets/homeAssets/airbnb.png";
 import binance from "../../../assets/homeAssets/binance.png";
 import conbase from "../../../assets/homeAssets/conbase.png";
 import dropbase from "../../../assets/homeAssets/dropbox.png";
+import pfcard from "../../../assets/homeAssets/pfcard.png";
+import Fimg from "../../../assets/homeAssets/pfimg.png";
 
 const Home = () => {
   return (
@@ -170,12 +172,34 @@ const Home = () => {
           </div>
         </div>
       </div>
+
+      <div className="pfcard-container">
+        <div className="pfcard-container-content">
+          <PfCards
+            pftext="Money is only a tool. It will take you wherever you wish, but it will
+          not replace you as the driver."
+            pfName="Herman Jensen"
+            Pfimg={Fimg}
+          />
+          <PfCards
+            pftext="Money is only a tool. It will take you wherever you wish, but it will
+          not replace you as the driver."
+            pfName="Steve Mark"
+            Pfimg={Fimg}
+          />
+          <PfCards
+            pftext="It is usually people in the money business, finance, and international trade that are really rich."
+            pfName="Kenn Gallagher"
+            Pfimg={Fimg}
+          />
+        </div>
+      </div>
       <div className="companyNames">
-        <div className='companyNames-content'>
-        <img src={airbn} alt='airbnd' />
-        <img src={conbase} alt='airbnd' />
-        <img src={binance} alt='airbnd' />
-        <img src={dropbase} alt='airbnd' />
+        <div className="companyNames-content">
+          <img src={airbn} alt="airbnd" />
+          <img src={conbase} alt="airbnd" />
+          <img src={binance} alt="airbnd" />
+          <img src={dropbase} alt="airbnd" />
         </div>
       </div>
     </>
@@ -205,6 +229,26 @@ const BussinessCards = ({ tittle, data, Star }) => {
         <div className="bscard-content-right">
           <h2> {tittle} </h2>
           <p>{data}</p>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+const PfCards = ({ pftext, pfName, Pfimg }) => {
+  return (
+    <div className="pfcards">
+      <div className="pfcards-content">
+        <img src={pfcard} alt="pfcards" />
+        <p>{pftext}</p>
+        <div className="pfcards-content-profile">
+          <div className="pfcards-content-profile-left">
+            <img src={Pfimg} alt="profile" />
+          </div>
+          <div className="pfcards-content-profile-right">
+            <h1> {pfName} </h1>
+            <p>Founder & Leader</p>
+          </div>
         </div>
       </div>
     </div>

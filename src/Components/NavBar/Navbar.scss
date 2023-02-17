@@ -649,12 +649,94 @@
   }
 }
 
-.companyNames{
+.pfcard-container {
+  width: 100%;
+  height: auto;
+  padding: 4em 0rem;
+  background-color: #11141f;
+  &-content {
+    width: 80%;
+    height: auto;
+    margin: auto;
+    padding: 4rem 0rem;
+    display: flex;
+    justify-content: space-between;
+    // background-color: peachpuff;
+  }
+}
+
+.pfcards {
+  width: 30%;
+  height: auto;
+  padding: 1rem 0rem;
+  cursor: pointer;
+  // background-color: palegreen;
+  &:hover {
+    background: linear-gradient(
+      144.39deg,
+      #ffffff -278.56%,
+      #6d6d6d -78.47%,
+      #11101d 91.61%
+    );
+    backdrop-filter: blur(5px);
+    /* Note: backdrop-filter has minimal browser support */
+    border-radius: 20px;
+  }
+  &-content {
+    width: 80%;
+    height: auto;
+    margin: auto;
+    padding: 0.5rem 0rem;
+    // background-color: purple;
+    & > p {
+      margin-top: 40px;
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1.5rem;
+      line-height: 180%;
+      letter-spacing: 0.02em;
+      color: #ffffff;
+    }
+    &-profile {
+      width: 100%;
+      height: auto;
+      margin-top: 20px;
+      padding: 0.5rem 0rem;
+      display: flex;
+      // background-color: palevioletred;
+      &-left {
+      }
+      &-right {
+        margin-left: 16px;
+        & > h1 {
+          font-family: "Poppins";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 1.8rem;
+          // line-height: 32px;
+          color: #ffffff;
+        }
+        & > p {
+          font-family: "Poppins";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 1.4rem;
+          // line-height: 24px;
+          color: #ffffff;
+          opacity: 0.5;
+        }
+      }
+    }
+  }
+}
+
+.companyNames {
   width: 100%;
   height: auto;
   padding: 5rem 0rem;
   background-color: #11141f;
-  &-content{
+  &-content {
     width: 80%;
     height: auto;
     margin: auto;
@@ -663,9 +745,8 @@
     justify-content: space-between;
     padding: 2rem 0rem;
     // background-color: darkblue;
-    &>img{
+    & > img {
       width: 192px;
     }
-
   }
 }
